@@ -1,0 +1,15 @@
+@import "./variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.7)), url("../Img/Libreria.jpg") no-repeat center center / cover;
+}
