@@ -8,6 +8,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: $montserrat;
+    text-decoration: none;
 }
 
 html, body {
@@ -32,17 +33,17 @@ header {
 }
 
 main {
-    height: 100%;
+    min-height: 100%;
     background-color: $blueDark-color;
 
-    .linearGradient-white {
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 120px;
-        left: 0;
-        background: linear-gradient(to bottom, rgba($color: $white, $alpha: 0) ,rgba($color: $white, $alpha: 0.7));
-    }
+    // .linearGradient-white {
+    //     height: 100%;
+    //     width: 100%;
+    //     position: fixed;
+    //     top: 120px;
+    //     left: 0;
+    //     background: linear-gradient(to bottom, rgba($color: $white, $alpha: 0) ,rgba($color: $white, $alpha: 0.7));
+    // }
 
     .card-section {
         display: grid;
@@ -54,13 +55,16 @@ main {
         .card {
             width: 331px;
             height: 422px;
-            background: linear-gradient(124.4deg ,rgba($color: $white, $alpha:1), rgba($color: $white, $alpha:0.3));
+            background: linear-gradient(124.4deg ,rgba($color: $white, $alpha:0.8), rgba($color: $white, $alpha:0.3));
             border-radius: 10px;
+
+            &:hover {
+                box-shadow: 0 0 10px $yellow-color;
+            }
 
             img {
                 width: 195px;
                 height: 195px;
-                border-radius: 50%;
                 margin-top: 16px;
                 margin-left: 50%;
                 transform: translate(-50%);
@@ -73,22 +77,18 @@ main {
                 .title {
                     text-align: center;
                     color: $yellow-color;
-                    font-size: 48px;
+                    font-size: 18px;
                 }
 
                 .author-date {
                     display: flex;
                     justify-content: center;
+                    margin-top: 20px;
+                    font-weight: 700;
 
                     .author, .date, p {
-                        color: $blueLight-color;
+                        color: $dark-color;
                     }
-                }
-
-                .description {
-                    text-align: center;
-                    margin-top: 5px;
-                    color: $dark-color;
                 }
             }
         }

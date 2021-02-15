@@ -210,6 +210,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 html, body {
@@ -238,18 +239,8 @@ header .search-zone {
 }
 
 main {
-  height: 100%;
+  min-height: 100%;
   background-color: #065471;
-}
-
-main .linearGradient-white {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 120px;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7)));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
 }
 
 main .card-section {
@@ -266,14 +257,18 @@ main .card-section {
 main .card-section .card {
   width: 331px;
   height: 422px;
-  background: linear-gradient(124.4deg, white, rgba(255, 255, 255, 0.3));
+  background: linear-gradient(124.4deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
   border-radius: 10px;
+}
+
+main .card-section .card:hover {
+  -webkit-box-shadow: 0 0 10px #FFC045;
+          box-shadow: 0 0 10px #FFC045;
 }
 
 main .card-section .card img {
   width: 195px;
   height: 195px;
-  border-radius: 50%;
   margin-top: 16px;
   margin-left: 50%;
   -webkit-transform: translate(-50%);
@@ -288,7 +283,7 @@ main .card-section .card hgroup {
 main .card-section .card hgroup .title {
   text-align: center;
   color: #FFC045;
-  font-size: 48px;
+  font-size: 18px;
 }
 
 main .card-section .card hgroup .author-date {
@@ -298,15 +293,11 @@ main .card-section .card hgroup .author-date {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
+  font-weight: 700;
 }
 
 main .card-section .card hgroup .author-date .author, main .card-section .card hgroup .author-date .date, main .card-section .card hgroup .author-date p {
-  color: #0A91AB;
-}
-
-main .card-section .card hgroup .description {
-  text-align: center;
-  margin-top: 5px;
   color: #0C2233;
 }
 /*# sourceMappingURL=style2.css.map */
