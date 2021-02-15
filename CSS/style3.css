@@ -1,1 +1,202 @@
-/* No CSS *//*# sourceMappingURL=style3.css.map */
+.search-zone {
+  margin-top: 2.9375rem;
+}
+
+.search-zone .search-bar {
+  width: 67.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-zone .search-bar .searchAndButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-left: 10%;
+}
+
+.search-zone .search-bar .searchAndButton input {
+  min-width: 64.3125rem;
+  height: 3.75rem;
+  padding-left: 1.375rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search-zone .search-bar .searchAndButton input::-webkit-input-placeholder {
+  color: #8E8E8E;
+}
+
+.search-zone .search-bar .searchAndButton input:-ms-input-placeholder {
+  color: #8E8E8E;
+}
+
+.search-zone .search-bar .searchAndButton input::-ms-input-placeholder {
+  color: #8E8E8E;
+}
+
+.search-zone .search-bar .searchAndButton input::placeholder {
+  color: #8E8E8E;
+}
+
+.search-zone .search-bar .searchAndButton input:focus {
+  -webkit-box-shadow: 0 0 3pt 2pt orange;
+          box-shadow: 0 0 3pt 2pt orange;
+}
+
+.search-zone .search-bar .searchAndButton .search {
+  background-color: #FFC045;
+  min-width: 120px;
+  height: 3.55rem;
+  border: none;
+  outline: none;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+.search-zone .search-bar .searchAndButton .search:hover {
+  background-color: orange;
+}
+
+.search-zone .search-bar h5 {
+  color: #fff;
+  min-width: 164px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.search-zone .search-bar h5:hover {
+  text-decoration: underline;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+header {
+  height: 120px;
+  background-color: #0C2233;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #logo {
+  color: #fff;
+  font-size: 2.25rem;
+  margin-left: 34px;
+}
+
+header .search-zone {
+  margin-top: 0;
+}
+
+main {
+  height: 100%;
+  background-color: #065471;
+}
+
+main .linearGradient-white {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
+}
+
+main .input-zone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 212px;
+  position: relative;
+  z-index: 1;
+}
+
+main .input-zone input {
+  width: 519px;
+  height: 71px;
+  margin-bottom: 39px;
+  padding-left: 1.375rem;
+}
+
+main .input-zone input::-webkit-input-placeholder {
+  color: #8E8E8E;
+}
+
+main .input-zone input:-ms-input-placeholder {
+  color: #8E8E8E;
+}
+
+main .input-zone input::-ms-input-placeholder {
+  color: #8E8E8E;
+}
+
+main .input-zone input::placeholder {
+  color: #8E8E8E;
+}
+
+main .input-zone input:last-child {
+  margin-bottom: 0;
+}
+
+main .input-zone button {
+  width: 519px;
+  height: 71px;
+  background-color: #FFC045;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+main .input-zone button:hover {
+  background-color: orange;
+}
+/*# sourceMappingURL=style3.css.map */
