@@ -1,0 +1,95 @@
+@import "./variables";
+@import "./text-center";
+@import "./font";
+@import "./search-zone";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $montserrat;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    height: 120px;
+    background-color: $dark-color;
+    display: flex;
+    align-items: center;
+
+    #logo {
+        color: $white;
+        font-size: 2.25rem;
+        margin-left: 34px;
+    }
+
+    .search-zone {
+        margin-top: 0;
+    }
+}
+
+main {
+    min-height: 100%;
+    background-color: $blueDark-color;
+
+    .linearGradient-white {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to bottom, rgba($color: $white, $alpha: 0) ,rgba($color: $white, $alpha: 0.55));
+    }
+
+    .card-section {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 50px;
+        justify-content: space-around;
+        padding-top: 33px;
+
+        .card {
+            width: 331px;
+            height: 422px;
+            background: linear-gradient(124.4deg ,rgba($color: $white, $alpha:1), rgba($color: $white, $alpha:0.3));
+            border-radius: 10px;
+
+            img {
+                width: 195px;
+                height: 195px;
+                border-radius: 50%;
+                margin-top: 16px;
+                margin-left: 50%;
+                transform: translate(-50%);
+            }
+
+            hgroup {
+                width: 247px;
+                margin: 10px auto;
+
+                .title {
+                    text-align: center;
+                    color: $yellow-color;
+                    font-size: 48px;
+                }
+
+                .author-date {
+                    display: flex;
+                    justify-content: center;
+
+                    .author, .date, p {
+                        color: $blueLight-color;
+                    }
+                }
+
+                .description {
+                    text-align: center;
+                    margin-top: 5px;
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+}
