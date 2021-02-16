@@ -59,7 +59,7 @@
           box-shadow: 0 0 3pt 2pt orange;
 }
 
-.search-zone .search-bar .searchAndButton .search {
+.search-zone .search-bar .searchAndButton .search, .search-zone .search-bar .searchAndButton .search1 {
   background-color: #FFC045;
   min-width: 120px;
   height: 3.55rem;
@@ -74,7 +74,7 @@
   right: 0;
 }
 
-.search-zone .search-bar .searchAndButton .search:hover {
+.search-zone .search-bar .searchAndButton .search:hover, .search-zone .search-bar .searchAndButton .search1:hover {
   background-color: orange;
 }
 

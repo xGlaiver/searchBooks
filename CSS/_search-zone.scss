@@ -28,7 +28,7 @@
                 }
             }
 
-            .search {
+            .search, .search1 {
                 background-color: $yellow-color;
                 min-width: 120px;
                 height: 3.55rem;
@@ -48,19 +48,6 @@
             }
         }
 
-        
-
-        h5 {
-            color: $white;
-            min-width: 164px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
     }
 }

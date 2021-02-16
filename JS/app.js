@@ -1,10 +1,9 @@
 findBooks = () => {
-    const value = document.querySelector(".search-input").value;
     const cardSection = document.querySelector(".card-section");
 
     cardSection.innerHTML = "";
     const ui = new UI();
-    const book = new Books(value);
+    const book = new Books(sessionStorage.getItem("1"));
     
     book.fetchData()
     .then(data => {
@@ -17,9 +16,20 @@ findBooks = () => {
             const infoLink = data.items[i].volumeInfo.infoLink;
 
             ui.createBooks(img, title, author, date, infoLink);
-        }       
+        } 
         console.log(data);
+    })
+    .catch(e => {
+        console.log("Error!");
+        console.log(e);
     });
 }
 
-document.querySelector(".search").addEventListener("click", findBooks);
+document.addEventListener("DOMContentLoaded", findBooks);
+
+document.querySelector(".search").addEventListener("click", () => {
+    const value = document.querySelector(".search-input").value;
+    sessionStorage.setItem("1", value);
+
+    findBooks(value);
+});
